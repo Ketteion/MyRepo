@@ -6,6 +6,7 @@ averageCost = 0
 
 #get user inputs
 #get name and price of their meal
+
 while q == "y" or q == "":
     name.append(input("What is your name?\n"))
     mealCost.append(int(input("How much does your meal cost? ")))
