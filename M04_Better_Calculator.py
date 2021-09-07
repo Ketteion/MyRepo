@@ -14,7 +14,9 @@ while q == "y" or q == "":
             b = is_num("Please input your second number.\n")
             print(f"The result is {a+b}.")
             q = input("Would you like to do another calculation? Y|n\n").lower()
-            if q == "y" or q == "" or q == "n":
+            if q == "y" or q == "":
+                continue
+            elif q == "n":
                 break
             else:
                 print("You did not input a valid response.")
@@ -24,7 +26,7 @@ while q == "y" or q == "":
             b = is_num("Please input your second number.\n")
             print(f"The result is {a - b}.")
             q = input("Would you like to do another calculation? Y|n\n").lower()
-            if q == "y" or q == "" or q == "n":
+            if q == "y" or q == "":
                 continue
             elif q == "n":
                 break
@@ -36,7 +38,9 @@ while q == "y" or q == "":
             b = is_num("Please input your second number.\n")
             print(f"The result is {a * b}.")
             q = input("Would you like to do another calculation? Y|n\n").lower()
-            if q == "y" or q == "" or q == "n":
+            if q == "y" or q == "":
+                continue
+            elif q == "n":
                 break
             else:
                 print("You did not input a valid response.")
@@ -49,7 +53,9 @@ while q == "y" or q == "":
             except ZeroDivisionError:
                 print("You cannot divide by zero.")
             q = input("Would you like to do another calculation? Y|n\n").lower()
-            if q == "y" or q == "" or q == "n":
+            if q == "y" or q == "":
+                continue
+            elif q == "n":
                 break
             else:
                 print("You did not input a valid response.")
