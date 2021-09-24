@@ -32,3 +32,5 @@ for k , j in zip(name , mealCost):
         print(f"{k}'s Meal is {j - averageCost} higher than the average meal price.")
     elif j < averageCost:
         print(f"{k}'s Meal is {averageCost - j} lower than the average meal price.")
+    else:
+        print("heheh")
